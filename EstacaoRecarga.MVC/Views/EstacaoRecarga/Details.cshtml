@@ -1,0 +1,46 @@
+﻿@model EstacaoRecarga.Dominio.Entidades.EstacaoRecarga
+
+@{
+    ViewData["Title"] = "Estação de Recarga";
+}
+
+<h1>Estação de Recarga</h1>
+
+<div>
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Nome:
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+        <dt class = "col-sm-2">
+            Tipo:
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Tipo)
+        </dd>
+        <dt class = "col-sm-2">
+            Latitude:
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Latitude)
+        </dd>
+        <dt class = "col-sm-2">
+            Longitude:
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Longitude)
+        </dd>
+        <dt class = "col-sm-2">
+            Data de Criação:
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DataCriacao)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Alterar</a>
+    <a asp-action="Index">Voltar</a>
+</div>
